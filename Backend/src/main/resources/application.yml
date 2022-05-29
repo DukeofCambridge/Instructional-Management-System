@@ -1,0 +1,46 @@
+server:
+  port: 8085
+spring:
+    #配置rabbitMq 服务器
+  rabbitmq:
+    host: 47.100.197.182 #这里改为你自己的IP地址
+    port: 5672 # AMQP协议端口
+    username: admin
+    password: Password=1234
+  datasource:
+    url: jdbc:mysql://47.100.197.182:3306/softwareengineering?serverTimezone=Asia/Shanghai&characterEncoding=UTF-8
+    username: admin
+    password: Password=1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+  mail:
+    host: smtp.qq.com
+    username: 1162524575@qq.com
+    password: gctijyltttfrhaib
+    default-encoding: UTF-8
+
+  redis:
+    host: 47.103.81.118
+    port: 6379
+    jedis:
+      pool:
+        max-active: 8
+    password: 123456
+
+  data:
+    redis:
+      repositories:
+        enabled: false
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+logging:
+  config: classpath:log4j2.xml
+  level:
+    cn.jay.repository: trace
