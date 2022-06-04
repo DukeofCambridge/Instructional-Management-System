@@ -4,10 +4,12 @@ import com.tan.labbackend.dao.ReportDAO;
 import com.tan.labbackend.entity.*;
 import com.tan.labbackend.dao.ProjectDAO;
 import com.tan.labbackend.dao.UserProjectDAO;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -15,11 +17,10 @@ import java.util.List;
  * @Author Sir Lancelot
  */
 @Service
+@AllArgsConstructor
 public class ProjectService {
     @Autowired
     ProjectDAO projectDAO;
-    @Autowired
-    ProjectService projectService;
     @Autowired
     UserCourseService userCourseService;
     @Autowired
@@ -30,8 +31,10 @@ public class ProjectService {
     }
     // 查询课程历史项目(已过截止时间)
     public List<Project> getPastProjects(Integer courseId){
-        Date date = new Date();
-        return projectDAO.findByCourseIdAndEndTimeBefore(courseId, date);
+//        Calendar calendar = Calendar.getInstance();
+//        calendar.set(2023, Calendar.JANUARY,4,12,01,01);
+//        Date date = calendar.getTime();
+        return projectDAO.findByCourseIdAndEndTimeBefore(courseId, new Date());
     }
     // 查询进行中的项目
     public List<Project> getCurrentProjects(Integer courseId){
@@ -62,7 +65,7 @@ public class ProjectService {
     // 教师发布一个项目后 应创建UserProject联系实体
     @Transactional
     public void initialize(Integer pid){
-        Integer courseId = projectService.get(pid).getCourse().getId();
+        Integer courseId = this.get(pid).getCourse().getId();
         List<User> sl = userCourseService.findAllStudents(courseId);
         UserProject up = new UserProject();
         up.setProjectId(pid);

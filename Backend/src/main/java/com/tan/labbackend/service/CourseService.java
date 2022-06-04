@@ -4,6 +4,7 @@ import com.tan.labbackend.dao.FeedbackDAO;
 import com.tan.labbackend.entity.*;
 import com.tan.labbackend.dao.CourseDAO;
 import com.tan.labbackend.dao.UserCourseDAO;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -13,6 +14,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
+@AllArgsConstructor
 public class CourseService {
     @Autowired
     CourseDAO courseDAO;
@@ -22,8 +24,7 @@ public class CourseService {
     UserCourseDAO userCourseDAO;
     @Autowired
     FeedbackDAO feedbackDAO;
-    @Autowired
-    UserCourseService userCourseService;
+
     public List<Course> findAllbyUsername(String username){
         int uid = userService.findByUsername(username).getId();
         List<Integer> cids = userCourseDAO.findAllByUserId(uid)

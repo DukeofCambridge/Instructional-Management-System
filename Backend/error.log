@@ -69,3 +69,78 @@ java.lang.NullPointerException: Cannot invoke "com.tan.labbackend.entity.UserPro
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.54.jar:9.0.54]
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.54.jar:9.0.54]
 	at java.lang.Thread.run(Thread.java:833) [?:?]
+23:21:52.026 [docker-java-stream--1239256303] ERROR com.github.dockerjava.api.async.ResultCallbackTemplate - Error during callback
+com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"Head \"https://registry-1.docker.io/v2/testcontainers/ryuk/manifests/0.3.3\": unauthorized: incorrect username or password"}
+
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247) ~[testcontainers-1.16.2.jar:?]
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269) ~[testcontainers-1.16.2.jar:?]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+23:23:11.555 [docker-java-stream--1239256303] ERROR com.github.dockerjava.api.async.ResultCallbackTemplate - Error during callback
+com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"Head \"https://registry-1.docker.io/v2/testcontainers/ryuk/manifests/0.3.3\": unauthorized: incorrect username or password"}
+
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247) ~[testcontainers-1.16.2.jar:?]
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269) ~[testcontainers-1.16.2.jar:?]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+23:23:42.588 [docker-java-stream--1239256303] ERROR com.github.dockerjava.api.async.ResultCallbackTemplate - Error during callback
+com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"Head \"https://registry-1.docker.io/v2/testcontainers/ryuk/manifests/0.3.3\": unauthorized: incorrect username or password"}
+
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247) ~[testcontainers-1.16.2.jar:?]
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269) ~[testcontainers-1.16.2.jar:?]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+23:24:30.602 [docker-java-stream--1239256303] ERROR com.github.dockerjava.api.async.ResultCallbackTemplate - Error during callback
+com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"Head \"https://registry-1.docker.io/v2/testcontainers/ryuk/manifests/0.3.3\": unauthorized: incorrect username or password"}
+
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247) ~[testcontainers-1.16.2.jar:?]
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269) ~[testcontainers-1.16.2.jar:?]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+23:24:54.269 [docker-java-stream--1239256303] ERROR com.github.dockerjava.api.async.ResultCallbackTemplate - Error during callback
+com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"Head \"https://registry-1.docker.io/v2/testcontainers/ryuk/manifests/0.3.3\": unauthorized: incorrect username or password"}
+
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247) ~[testcontainers-1.16.2.jar:?]
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269) ~[testcontainers-1.16.2.jar:?]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+23:26:48.928 [docker-java-stream--1239256303] ERROR com.github.dockerjava.api.async.ResultCallbackTemplate - Error during callback
+com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"Head \"https://registry-1.docker.io/v2/testcontainers/ryuk/manifests/0.3.3\": unauthorized: incorrect username or password"}
+
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247) ~[testcontainers-1.16.2.jar:?]
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269) ~[testcontainers-1.16.2.jar:?]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+23:29:00.704 [docker-java-stream--1239256303] ERROR com.github.dockerjava.api.async.ResultCallbackTemplate - Error during callback
+com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"Head \"https://registry-1.docker.io/v2/testcontainers/ryuk/manifests/0.3.3\": unauthorized: incorrect username or password"}
+
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247) ~[testcontainers-1.16.2.jar:?]
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269) ~[testcontainers-1.16.2.jar:?]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+23:30:35.926 [docker-java-stream--1239256303] ERROR com.github.dockerjava.api.async.ResultCallbackTemplate - Error during callback
+com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"Head \"https://registry-1.docker.io/v2/testcontainers/ryuk/manifests/0.3.3\": unauthorized: incorrect username or password"}
+
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247) ~[testcontainers-1.16.2.jar:?]
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269) ~[testcontainers-1.16.2.jar:?]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+23:33:00.980 [docker-java-stream-2101387052] ERROR com.github.dockerjava.api.async.ResultCallbackTemplate - Error during callback
+com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"Head \"https://registry-1.docker.io/v2/testcontainers/ryuk/manifests/0.3.3\": unauthorized: incorrect username or password"}
+
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247) ~[testcontainers-1.16.2.jar:?]
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269) ~[testcontainers-1.16.2.jar:?]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+23:33:45.740 [docker-java-stream-2101387052] ERROR com.github.dockerjava.api.async.ResultCallbackTemplate - Error during callback
+com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"Head \"https://registry-1.docker.io/v2/testcontainers/ryuk/manifests/0.3.3\": unauthorized: incorrect username or password"}
+
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247) ~[testcontainers-1.16.2.jar:?]
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269) ~[testcontainers-1.16.2.jar:?]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+23:39:54.381 [main] ERROR org.testcontainers.dockerclient.DockerClientProviderStrategy - Could not find a valid Docker environment. Please check configuration. Attempted configurations were:
+23:39:54.381 [main] ERROR org.testcontainers.dockerclient.DockerClientProviderStrategy -     NpipeSocketClientProviderStrategy: failed with exception TimeoutException (org.rnorth.ducttape.TimeoutException: java.util.concurrent.TimeoutException). Root cause TimeoutException (null)
+23:39:54.382 [main] ERROR org.testcontainers.dockerclient.DockerClientProviderStrategy - As no valid configuration was found, execution cannot continue
+23:42:23.582 [docker-java-stream-952074891] ERROR com.github.dockerjava.api.async.ResultCallbackTemplate - Error during callback
+com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"Head \"https://registry-1.docker.io/v2/testcontainers/ryuk/manifests/0.3.3\": unauthorized: incorrect username or password"}
+
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247) ~[testcontainers-1.16.2.jar:?]
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269) ~[testcontainers-1.16.2.jar:?]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+23:47:42.857 [docker-java-stream-922873257] ERROR com.github.dockerjava.api.async.ResultCallbackTemplate - Error during callback
+com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"Get \"https://registry-1.docker.io/v2/testcontainers/ryuk/manifests/sha256:d50c04005142e165182b2e408d0c76f3cc38ca4db4af14125ce1b938820e5cef\": EOF"}
+
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247) ~[testcontainers-1.16.2.jar:?]
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269) ~[testcontainers-1.16.2.jar:?]
+	at java.lang.Thread.run(Thread.java:831) [?:?]

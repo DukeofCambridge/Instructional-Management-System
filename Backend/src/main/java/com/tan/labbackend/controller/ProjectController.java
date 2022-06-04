@@ -90,13 +90,7 @@ public class ProjectController {
     public Result remain(@PathVariable("courseId")Integer courseId){
         return ResultFactory.buildSuccessResult(projectService.remain(courseId));
     }
-    @ApiOperation("保存实验报告（学生）")
-    @PostMapping("save")
-    @CrossOrigin
-    public Result save(@RequestBody Report report){
-        reportService.addOrUpdate(report);
-        return ResultFactory.buildSuccessResult("保存成功！");
-    }
+
     @ApiOperation("查看学生报告")
     @GetMapping("getReport")
     @CrossOrigin
@@ -107,10 +101,21 @@ public class ProjectController {
             return ResultFactory.buildFailResult("学生未提交作业");
         }
     }
-    @ApiOperation("获取报告模板")
-    @GetMapping("template")
-    @CrossOrigin
-    public Result getTemplate(){
-        return ResultFactory.buildSuccessResult(reportService.get(0));
-    }
+
+
+//    @ApiOperation("获取报告模板")
+//    @GetMapping("template")
+//    @CrossOrigin
+//    public Result getTemplate(){
+//        return ResultFactory.buildSuccessResult(reportService.get(0));
+//    }
+//
+//
+//    @ApiOperation("保存实验报告（学生）")
+//    @PostMapping("save")
+//    @CrossOrigin
+//    public Result save(@RequestBody Report report){
+//        reportService.addOrUpdate(report);
+//        return ResultFactory.buildSuccessResult("保存成功！");
+//    }
 }
