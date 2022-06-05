@@ -1,4 +1,0 @@
-10:26:04.386 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
-10:26:04.434 [main] INFO  com.tan.labbackend.controller.TeachingModuleControllerTest - Starting TeachingModuleControllerTest using Java 16.0.2 on LAPTOP-RR0F39HJ with PID 20268 (started by Feihang Yang in D:\Code\Github_Desktop\2022 - course - coop\软件测试\SoftwareTesting-Demo\Backend)
-10:26:04.440 [main] INFO  com.tan.labbackend.controller.TeachingModuleControllerTest - No active profile set, falling back to default profiles: default
-10:26:08.234 [main] INFO  com.tan.labbackend.controller.TeachingModuleControllerTest - Started TeachingModuleControllerTest in 4.364 seconds (JVM running for 7.149)

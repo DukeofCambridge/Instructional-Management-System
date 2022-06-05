@@ -1,26 +1,19 @@
-package com.tan.labbackend.service;
-
 import com.tan.labbackend.dao.UserDAO;
-import com.tan.labbackend.entity.Report;
 import com.tan.labbackend.entity.Role;
 import com.tan.labbackend.entity.User;
 import com.tan.labbackend.redis.RedisService;
+import com.tan.labbackend.service.RoleService;
+import com.tan.labbackend.service.UserService;
 import com.tan.labbackend.utils.RabbitProducer;
-//import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.testng.TestListenerAdapter;
-import org.testng.annotations.Listeners;
 
-import java.util.Optional;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @ExtendWith(MockitoExtension.class)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
@@ -35,6 +28,7 @@ public class UserServiceTest {
     @Mock
     RabbitProducer rabbitProducer;
 
+    @Autowired
     private UserService userService;
 
     private static User user;

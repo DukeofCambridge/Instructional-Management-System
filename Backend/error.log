@@ -200,3 +200,383 @@ java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
 09:19:58.595 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
 09:19:58.595 [http-nio-8085-exec-5] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
 09:19:58.805 [http-nio-8085-exec-3] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 15, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+14:27:48.087 [main] ERROR org.aspectj.weaver.loadtime.Aj - org/springframework/boot/liquibase/LiquibaseChangelogMissingFailureAnalyzer
+org.aspectj.bridge.AbortException: trouble in: 
+class org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer extends org.springframework.boot.diagnostics.AbstractFailureAnalyzer:
+  private static final String MESSAGE_SUFFIX = " does not exist"
+  void <init>():
+                    ALOAD_0     // Lorg/springframework/boot/liquibase/LiquibaseChangelogMissingFailureAnalyzer; this   (line 30)
+                    INVOKESPECIAL org.springframework.boot.diagnostics.AbstractFailureAnalyzer.<init> ()V
+    constructor-execution(void org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer.<init>())
+  end void <init>()
+
+  protected org.springframework.boot.diagnostics.FailureAnalysis analyze(Throwable, liquibase.exception.ChangeLogParseException):
+                    ALOAD_2     // Lliquibase/exception/ChangeLogParseException; cause   (line 36)
+                    INVOKEVIRTUAL liquibase.exception.ChangeLogParseException.getMessage ()Ljava/lang/String;
+                    LDC " does not exist"
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/boot/liquibase/LiquibaseChangelogMissingFailureAnalyzer; this   (line 37)
+                    ALOAD_2     // Lliquibase/exception/ChangeLogParseException; cause
+                    INVOKESPECIAL org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer.extractChangelogPath (Lliquibase/exception/ChangeLogParseException;)Ljava/lang/String;
+                    ASTORE_3
+                    NEW org.springframework.boot.diagnostics.FailureAnalysis   (line 38)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/boot/liquibase/LiquibaseChangelogMissingFailureAnalyzer; this
+                    ALOAD_3     // Ljava/lang/String; changelogPath
+                    INVOKESPECIAL org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer.getDescription (Ljava/lang/String;)Ljava/lang/String;
+                    LDC "Make sure a Liquibase changelog is present at the configured path."
+                    ALOAD_2     // Lliquibase/exception/ChangeLogParseException; cause
+                    INVOKESPECIAL org.springframework.boot.diagnostics.FailureAnalysis.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+                    ARETURN
+                L0: ACONST_NULL   (line 41)
+                    ARETURN
+  end protected org.springframework.boot.diagnostics.FailureAnalysis analyze(Throwable, liquibase.exception.ChangeLogParseException)
+
+  private String extractChangelogPath(liquibase.exception.ChangeLogParseException):
+                    ALOAD_1     // Lliquibase/exception/ChangeLogParseException; cause   (line 45)
+                    INVOKEVIRTUAL liquibase.exception.ChangeLogParseException.getMessage ()Ljava/lang/String;
+                    ICONST_0
+                    ALOAD_1     // Lliquibase/exception/ChangeLogParseException; cause
+                    INVOKEVIRTUAL liquibase.exception.ChangeLogParseException.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    LDC " does not exist"
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ISUB
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ARETURN
+  end private String extractChangelogPath(liquibase.exception.ChangeLogParseException)
+
+  private String getDescription(String):
+                    NEW java.lang.StringBuilder   (line 49)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    LDC "Liquibase failed to start because no changelog could be found at '"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/String; changelogPath
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "'."
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end private String getDescription(String)
+
+  protected volatile org.springframework.boot.diagnostics.FailureAnalysis analyze(Throwable, Throwable):
+                    ALOAD_0     // Lorg/springframework/boot/liquibase/LiquibaseChangelogMissingFailureAnalyzer; this   (line 30)
+                    ALOAD_1
+                    ALOAD_2
+                    CHECKCAST liquibase.exception.ChangeLogParseException
+                    INVOKEVIRTUAL org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer.analyze (Ljava/lang/Throwable;Lliquibase/exception/ChangeLogParseException;)Lorg/springframework/boot/diagnostics/FailureAnalysis;
+                    ARETURN
+  end protected volatile org.springframework.boot.diagnostics.FailureAnalysis analyze(Throwable, Throwable)
+
+end class org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47) ~[aspectjweaver-1.9.9.1.jar:?]
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:817) ~[aspectjweaver-1.9.9.1.jar:?]
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:762) ~[aspectjweaver-1.9.9.1.jar:?]
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1732) ~[aspectjweaver-1.9.9.1.jar:?]
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1650) ~[aspectjweaver-1.9.9.1.jar:?]
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1417) ~[aspectjweaver-1.9.9.1.jar:?]
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1192) ~[aspectjweaver-1.9.9.1.jar:?]
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:549) ~[aspectjweaver-1.9.9.1.jar:?]
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:385) ~[aspectjweaver-1.9.9.1.jar:?]
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:115) ~[aspectjweaver-1.9.9.1.jar:?]
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:51) ~[aspectjweaver-1.9.9.1.jar:?]
+	at java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:244) ~[?:?]
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188) ~[?:?]
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:565) ~[?:?]
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1010) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:855) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:753) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:676) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:634) ~[?:?]
+	at jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:182) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:519) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:466) ~[?:?]
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:284) ~[spring-core-5.3.12.jar:5.3.12]
+	at org.springframework.boot.diagnostics.FailureAnalyzers.createAnalyzer(FailureAnalyzers.java:91) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.diagnostics.FailureAnalyzers.loadFailureAnalyzers(FailureAnalyzers.java:77) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.diagnostics.FailureAnalyzers.<init>(FailureAnalyzers.java:64) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.diagnostics.FailureAnalyzers.<init>(FailureAnalyzers.java:59) ~[spring-boot-2.5.6.jar:2.5.6]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-5.3.12.jar:5.3.12]
+	at org.springframework.boot.SpringApplication.createSpringFactoriesInstances(SpringApplication.java:471) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.getSpringFactoriesInstances(SpringApplication.java:457) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.getExceptionReporters(SpringApplication.java:822) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:808) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:348) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123) ~[spring-boot-test-2.5.6.jar:2.5.6]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.12.jar:5.3.12]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.12.jar:5.3.12]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.12.jar:5.3.12]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:110) ~[spring-boot-test-2.5.6.jar:2.5.6]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:94) ~[spring-boot-test-2.5.6.jar:2.5.6]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:61) ~[spring-boot-test-2.5.6.jar:2.5.6]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.12.jar:5.3.12]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.12.jar:5.3.12]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:355) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$7(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:349) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$4(ClassBasedTestDescriptor.java:270) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:269) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:259) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at java.util.Optional.orElseGet(Optional.java:364) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:258) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:100) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:65) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:79) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108) ~[junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) [junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) [junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96) [junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75) [junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:55) [surefire-junit-platform-3.0.0-M6.jar:3.0.0-M6]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:223) [surefire-junit-platform-3.0.0-M6.jar:3.0.0-M6]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:175) [surefire-junit-platform-3.0.0-M6.jar:3.0.0-M6]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:139) [surefire-junit-platform-3.0.0-M6.jar:3.0.0-M6]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456) [surefire-booter-3.0.0-M6.jar:3.0.0-M6]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169) [surefire-booter-3.0.0-M6.jar:3.0.0-M6]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595) [surefire-booter-3.0.0-M6.jar:3.0.0-M6]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581) [surefire-booter-3.0.0-M6.jar:3.0.0-M6]
+14:34:37.174 [main] ERROR org.aspectj.weaver.loadtime.Aj - org/springframework/boot/liquibase/LiquibaseChangelogMissingFailureAnalyzer
+org.aspectj.bridge.AbortException: trouble in: 
+class org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer extends org.springframework.boot.diagnostics.AbstractFailureAnalyzer:
+  private static final String MESSAGE_SUFFIX = " does not exist"
+  void <init>():
+                    ALOAD_0     // Lorg/springframework/boot/liquibase/LiquibaseChangelogMissingFailureAnalyzer; this   (line 30)
+                    INVOKESPECIAL org.springframework.boot.diagnostics.AbstractFailureAnalyzer.<init> ()V
+    constructor-execution(void org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer.<init>())
+  end void <init>()
+
+  protected org.springframework.boot.diagnostics.FailureAnalysis analyze(Throwable, liquibase.exception.ChangeLogParseException):
+                    ALOAD_2     // Lliquibase/exception/ChangeLogParseException; cause   (line 36)
+                    INVOKEVIRTUAL liquibase.exception.ChangeLogParseException.getMessage ()Ljava/lang/String;
+                    LDC " does not exist"
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/boot/liquibase/LiquibaseChangelogMissingFailureAnalyzer; this   (line 37)
+                    ALOAD_2     // Lliquibase/exception/ChangeLogParseException; cause
+                    INVOKESPECIAL org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer.extractChangelogPath (Lliquibase/exception/ChangeLogParseException;)Ljava/lang/String;
+                    ASTORE_3
+                    NEW org.springframework.boot.diagnostics.FailureAnalysis   (line 38)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/boot/liquibase/LiquibaseChangelogMissingFailureAnalyzer; this
+                    ALOAD_3     // Ljava/lang/String; changelogPath
+                    INVOKESPECIAL org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer.getDescription (Ljava/lang/String;)Ljava/lang/String;
+                    LDC "Make sure a Liquibase changelog is present at the configured path."
+                    ALOAD_2     // Lliquibase/exception/ChangeLogParseException; cause
+                    INVOKESPECIAL org.springframework.boot.diagnostics.FailureAnalysis.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+                    ARETURN
+                L0: ACONST_NULL   (line 41)
+                    ARETURN
+  end protected org.springframework.boot.diagnostics.FailureAnalysis analyze(Throwable, liquibase.exception.ChangeLogParseException)
+
+  private String extractChangelogPath(liquibase.exception.ChangeLogParseException):
+                    ALOAD_1     // Lliquibase/exception/ChangeLogParseException; cause   (line 45)
+                    INVOKEVIRTUAL liquibase.exception.ChangeLogParseException.getMessage ()Ljava/lang/String;
+                    ICONST_0
+                    ALOAD_1     // Lliquibase/exception/ChangeLogParseException; cause
+                    INVOKEVIRTUAL liquibase.exception.ChangeLogParseException.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    LDC " does not exist"
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ISUB
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ARETURN
+  end private String extractChangelogPath(liquibase.exception.ChangeLogParseException)
+
+  private String getDescription(String):
+                    NEW java.lang.StringBuilder   (line 49)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    LDC "Liquibase failed to start because no changelog could be found at '"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/String; changelogPath
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "'."
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end private String getDescription(String)
+
+  protected volatile org.springframework.boot.diagnostics.FailureAnalysis analyze(Throwable, Throwable):
+                    ALOAD_0     // Lorg/springframework/boot/liquibase/LiquibaseChangelogMissingFailureAnalyzer; this   (line 30)
+                    ALOAD_1
+                    ALOAD_2
+                    CHECKCAST liquibase.exception.ChangeLogParseException
+                    INVOKEVIRTUAL org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer.analyze (Ljava/lang/Throwable;Lliquibase/exception/ChangeLogParseException;)Lorg/springframework/boot/diagnostics/FailureAnalysis;
+                    ARETURN
+  end protected volatile org.springframework.boot.diagnostics.FailureAnalysis analyze(Throwable, Throwable)
+
+end class org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47) ~[aspectjweaver-1.9.9.1.jar:?]
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:817) ~[aspectjweaver-1.9.9.1.jar:?]
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:762) ~[aspectjweaver-1.9.9.1.jar:?]
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1732) ~[aspectjweaver-1.9.9.1.jar:?]
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1650) ~[aspectjweaver-1.9.9.1.jar:?]
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1417) ~[aspectjweaver-1.9.9.1.jar:?]
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1192) ~[aspectjweaver-1.9.9.1.jar:?]
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:549) ~[aspectjweaver-1.9.9.1.jar:?]
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:385) ~[aspectjweaver-1.9.9.1.jar:?]
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:115) ~[aspectjweaver-1.9.9.1.jar:?]
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:51) ~[aspectjweaver-1.9.9.1.jar:?]
+	at java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:244) ~[?:?]
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188) ~[?:?]
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:565) ~[?:?]
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1010) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:855) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:753) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:676) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:634) ~[?:?]
+	at jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:182) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:519) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:466) ~[?:?]
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:284) ~[spring-core-5.3.12.jar:5.3.12]
+	at org.springframework.boot.diagnostics.FailureAnalyzers.createAnalyzer(FailureAnalyzers.java:91) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.diagnostics.FailureAnalyzers.loadFailureAnalyzers(FailureAnalyzers.java:77) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.diagnostics.FailureAnalyzers.<init>(FailureAnalyzers.java:64) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.diagnostics.FailureAnalyzers.<init>(FailureAnalyzers.java:59) ~[spring-boot-2.5.6.jar:2.5.6]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-5.3.12.jar:5.3.12]
+	at org.springframework.boot.SpringApplication.createSpringFactoriesInstances(SpringApplication.java:471) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.getSpringFactoriesInstances(SpringApplication.java:457) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.getExceptionReporters(SpringApplication.java:822) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:808) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:348) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123) ~[spring-boot-test-2.5.6.jar:2.5.6]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.12.jar:5.3.12]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.12.jar:5.3.12]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.12.jar:5.3.12]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:110) ~[spring-boot-test-2.5.6.jar:2.5.6]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:94) ~[spring-boot-test-2.5.6.jar:2.5.6]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:61) ~[spring-boot-test-2.5.6.jar:2.5.6]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.12.jar:5.3.12]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.12.jar:5.3.12]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:355) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$7(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:349) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$4(ClassBasedTestDescriptor.java:270) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:269) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:259) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at java.util.Optional.orElseGet(Optional.java:364) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:258) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:100) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:65) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:79) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108) ~[junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) [junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) [junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96) [junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75) [junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:55) [surefire-junit-platform-3.0.0-M6.jar:3.0.0-M6]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:223) [surefire-junit-platform-3.0.0-M6.jar:3.0.0-M6]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:175) [surefire-junit-platform-3.0.0-M6.jar:3.0.0-M6]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:135) [surefire-junit-platform-3.0.0-M6.jar:3.0.0-M6]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456) [surefire-booter-3.0.0-M6.jar:3.0.0-M6]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169) [surefire-booter-3.0.0-M6.jar:3.0.0-M6]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595) [surefire-booter-3.0.0-M6.jar:3.0.0-M6]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581) [surefire-booter-3.0.0-M6.jar:3.0.0-M6]
