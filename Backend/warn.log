@@ -6,3 +6,275 @@ To enable reuse of containers, you must set 'testcontainers.reuse.enable=true' i
 To enable reuse of containers, you must set 'testcontainers.reuse.enable=true' in a file located at C:\Users\Feihang Yang\.testcontainers.properties
 00:11:41.838 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
 00:11:41.839 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+01:23:45.634 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+01:23:45.635 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+01:23:53.012 [WebSocketConnectReadThread-38] ERROR com.tan.labbackend.websocket.MyWebSocketClient - 客户端出错
+01:25:32.261 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+01:25:32.262 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+01:25:44.380 [WebSocketConnectReadThread-38] ERROR com.tan.labbackend.websocket.MyWebSocketClient - 客户端出错
+01:29:56.665 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+01:29:56.666 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+01:30:03.941 [WebSocketConnectReadThread-38] ERROR com.tan.labbackend.websocket.MyWebSocketClient - java.lang.IllegalArgumentException: hostname can't be null
+01:30:03.941 [WebSocketConnectReadThread-38] ERROR com.tan.labbackend.websocket.MyWebSocketClient - 客户端出错
+01:31:09.541 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+01:31:09.541 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+01:31:18.124 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: syntax error, pos 1, line 1, column 2VALUE2
+01:42:21.389 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+01:42:21.390 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+01:42:29.454 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: Cannot invoke "com.alibaba.fastjson.JSONObject.getObject(String, java.lang.Class)" because "jsonObject" is null
+01:44:01.661 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+01:44:01.663 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+01:44:09.563 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: syntax error, pos 1, line 1, column 2hhh
+01:44:53.969 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+01:44:53.971 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+01:45:04.427 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: syntax error, pos 1, line 1, column 2hhh
+01:46:24.070 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+01:46:24.072 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+01:46:34.891 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: syntax error, pos 1, line 1, column 2hhh
+01:47:10.866 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+01:47:10.867 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+01:47:23.286 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: syntax error, pos 1, line 1, column 2s
+01:47:59.276 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+01:47:59.277 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+01:48:08.381 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: Redis command interrupted; nested exception is io.lettuce.core.RedisCommandInterruptedException: Command interrupted
+01:53:07.762 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+01:53:07.763 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+01:53:15.873 [http-nio-8085-exec-4] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "com.tan.labbackend.utils.MessageTypeEnum.toString()" because "type" is null
+01:53:16.378 [http-nio-8085-exec-8] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: Cannot invoke "com.tan.labbackend.utils.MessageTypeEnum.toString()" because "type" is null
+01:53:16.378 [http-nio-8085-exec-7] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 15, errorMessage: Cannot invoke "com.tan.labbackend.utils.MessageTypeEnum.toString()" because "type" is null
+01:53:16.686 [http-nio-8085-exec-7] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 15, errorMessage: null
+01:53:16.686 [http-nio-8085-exec-8] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: null
+01:54:32.482 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+01:54:32.482 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+01:54:40.751 [http-nio-8085-exec-4] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "com.tan.labbackend.utils.MessageTypeEnum.toString()" because "type" is null
+01:56:37.317 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+01:56:37.317 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+01:57:45.577 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+01:57:45.578 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+08:11:28.974 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+08:11:28.975 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+08:14:47.163 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+08:14:47.164 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+08:14:58.007 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: Cannot read field "session" because "client" is null
+08:16:09.981 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+08:16:09.982 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+08:18:56.023 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+08:18:56.024 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+08:23:58.301 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+08:23:58.301 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+08:27:46.387 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+08:27:46.388 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+08:27:57.775 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+08:29:59.582 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+08:29:59.583 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+08:30:08.888 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+08:30:08.888 [http-nio-8085-exec-4] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+08:30:09.161 [http-nio-8085-exec-6] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 15, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+08:30:09.397 [http-nio-8085-exec-6] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 15, errorMessage: null
+08:31:32.940 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+08:31:32.941 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+08:31:44.102 [http-nio-8085-exec-4] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+08:34:22.403 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+08:34:22.403 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+08:34:30.944 [http-nio-8085-exec-4] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+08:35:18.469 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+08:35:18.470 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+08:35:27.293 [http-nio-8085-exec-4] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+08:36:04.622 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+08:36:04.623 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+08:36:15.357 [http-nio-8085-exec-4] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+08:41:41.065 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+08:41:41.066 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+08:41:49.966 [http-nio-8085-exec-4] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+08:43:40.661 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+08:43:40.662 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+08:43:50.550 [http-nio-8085-exec-4] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+08:47:38.199 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+08:47:38.200 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+08:47:46.948 [http-nio-8085-exec-5] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+08:50:08.378 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+08:50:08.378 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+08:57:59.599 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+08:57:59.600 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+09:02:31.299 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+09:02:31.300 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+09:02:42.546 [http-nio-8085-exec-4] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+09:06:31.167 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+09:06:31.168 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+09:06:42.195 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+09:06:42.195 [http-nio-8085-exec-4] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+09:06:42.409 [http-nio-8085-exec-3] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 15, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+09:08:13.015 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+09:08:13.016 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+09:08:24.523 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+09:08:24.523 [http-nio-8085-exec-4] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+09:08:24.724 [http-nio-8085-exec-3] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 15, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+09:12:37.445 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+09:12:37.445 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+09:12:49.808 [http-nio-8085-exec-1] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0] with root cause
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64) ~[?:?]
+	at jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70) ~[?:?]
+	at jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266) ~[?:?]
+	at java.util.Objects.checkIndex(Objects.java:359) ~[?:?]
+	at java.util.ArrayList.get(ArrayList.java:427) ~[?:?]
+	at com.tan.labbackend.service.ReportService.getReport(ReportService.java:24) ~[classes/:?]
+	at com.tan.labbackend.service.ReportService$$FastClassBySpringCGLIB$$9766d1fb.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.12.jar:5.3.12]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689) ~[spring-aop-5.3.12.jar:5.3.12]
+	at com.tan.labbackend.service.ReportService$$EnhancerBySpringCGLIB$$8ed04b2.getReport(<generated>) ~[classes/:?]
+	at com.tan.labbackend.controller.ProjectController.getReport(ProjectController.java:98) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.54.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.54.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:450) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.8.0.jar:1.8.0]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.8.0.jar:1.8.0]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387) ~[shiro-core-1.8.0.jar:1.8.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+09:13:40.703 [http-nio-8085-exec-4] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0] with root cause
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64) ~[?:?]
+	at jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70) ~[?:?]
+	at jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266) ~[?:?]
+	at java.util.Objects.checkIndex(Objects.java:359) ~[?:?]
+	at java.util.ArrayList.get(ArrayList.java:427) ~[?:?]
+	at com.tan.labbackend.service.ReportService.getReport(ReportService.java:24) ~[classes/:?]
+	at com.tan.labbackend.service.ReportService$$FastClassBySpringCGLIB$$9766d1fb.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.12.jar:5.3.12]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689) ~[spring-aop-5.3.12.jar:5.3.12]
+	at com.tan.labbackend.service.ReportService$$EnhancerBySpringCGLIB$$8ed04b2.getReport(<generated>) ~[classes/:?]
+	at com.tan.labbackend.controller.ProjectController.getReport(ProjectController.java:98) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.54.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.54.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:450) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.8.0.jar:1.8.0]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.8.0.jar:1.8.0]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387) ~[shiro-core-1.8.0.jar:1.8.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+09:19:47.072 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+09:19:47.073 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+09:19:58.595 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+09:19:58.595 [http-nio-8085-exec-5] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+09:19:58.805 [http-nio-8085-exec-3] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 15, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null

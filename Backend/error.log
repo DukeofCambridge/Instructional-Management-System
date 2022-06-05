@@ -1,10 +1,57 @@
-22:16:19.066 [http-nio-8085-exec-9] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.tan.labbackend.entity.UserProject.getProjectGrade()" because the return value of "com.tan.labbackend.dao.UserProjectDAO.findByProjectIdAndStudentId(java.lang.Integer, java.lang.Integer)" is null] with root cause
-java.lang.NullPointerException: Cannot invoke "com.tan.labbackend.entity.UserProject.getProjectGrade()" because the return value of "com.tan.labbackend.dao.UserProjectDAO.findByProjectIdAndStudentId(java.lang.Integer, java.lang.Integer)" is null
-	at com.tan.labbackend.controller.ScoreController.get(ScoreController.java:55) ~[classes/:?]
+01:23:53.012 [WebSocketConnectReadThread-38] ERROR com.tan.labbackend.websocket.MyWebSocketClient - 客户端出错
+01:25:44.380 [WebSocketConnectReadThread-38] ERROR com.tan.labbackend.websocket.MyWebSocketClient - 客户端出错
+01:30:03.941 [WebSocketConnectReadThread-38] ERROR com.tan.labbackend.websocket.MyWebSocketClient - java.lang.IllegalArgumentException: hostname can't be null
+01:30:03.941 [WebSocketConnectReadThread-38] ERROR com.tan.labbackend.websocket.MyWebSocketClient - 客户端出错
+01:31:18.124 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: syntax error, pos 1, line 1, column 2VALUE2
+01:42:29.454 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: Cannot invoke "com.alibaba.fastjson.JSONObject.getObject(String, java.lang.Class)" because "jsonObject" is null
+01:44:09.563 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: syntax error, pos 1, line 1, column 2hhh
+01:45:04.427 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: syntax error, pos 1, line 1, column 2hhh
+01:46:34.891 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: syntax error, pos 1, line 1, column 2hhh
+01:47:23.286 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: syntax error, pos 1, line 1, column 2s
+01:48:08.381 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: Redis command interrupted; nested exception is io.lettuce.core.RedisCommandInterruptedException: Command interrupted
+01:53:15.873 [http-nio-8085-exec-4] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "com.tan.labbackend.utils.MessageTypeEnum.toString()" because "type" is null
+01:53:16.378 [http-nio-8085-exec-8] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: Cannot invoke "com.tan.labbackend.utils.MessageTypeEnum.toString()" because "type" is null
+01:53:16.378 [http-nio-8085-exec-7] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 15, errorMessage: Cannot invoke "com.tan.labbackend.utils.MessageTypeEnum.toString()" because "type" is null
+01:53:16.686 [http-nio-8085-exec-7] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 15, errorMessage: null
+01:53:16.686 [http-nio-8085-exec-8] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: null
+01:54:40.751 [http-nio-8085-exec-4] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "com.tan.labbackend.utils.MessageTypeEnum.toString()" because "type" is null
+08:14:58.007 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: Cannot read field "session" because "client" is null
+08:27:57.775 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+08:30:08.888 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+08:30:08.888 [http-nio-8085-exec-4] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+08:30:09.161 [http-nio-8085-exec-6] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 15, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+08:30:09.397 [http-nio-8085-exec-6] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 15, errorMessage: null
+08:31:44.102 [http-nio-8085-exec-4] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+08:34:30.944 [http-nio-8085-exec-4] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+08:35:27.293 [http-nio-8085-exec-4] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+08:36:15.357 [http-nio-8085-exec-4] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+08:41:49.966 [http-nio-8085-exec-4] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+08:43:50.550 [http-nio-8085-exec-4] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+08:47:46.948 [http-nio-8085-exec-5] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+09:02:42.546 [http-nio-8085-exec-4] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+09:06:42.195 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+09:06:42.195 [http-nio-8085-exec-4] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+09:06:42.409 [http-nio-8085-exec-3] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 15, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+09:08:24.523 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+09:08:24.523 [http-nio-8085-exec-4] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+09:08:24.724 [http-nio-8085-exec-3] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 15, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+09:12:49.808 [http-nio-8085-exec-1] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0] with root cause
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64) ~[?:?]
+	at jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70) ~[?:?]
+	at jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266) ~[?:?]
+	at java.util.Objects.checkIndex(Objects.java:359) ~[?:?]
+	at java.util.ArrayList.get(ArrayList.java:427) ~[?:?]
+	at com.tan.labbackend.service.ReportService.getReport(ReportService.java:24) ~[classes/:?]
+	at com.tan.labbackend.service.ReportService$$FastClassBySpringCGLIB$$9766d1fb.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.12.jar:5.3.12]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689) ~[spring-aop-5.3.12.jar:5.3.12]
+	at com.tan.labbackend.service.ReportService$$EnhancerBySpringCGLIB$$8ed04b2.getReport(<generated>) ~[classes/:?]
+	at com.tan.labbackend.controller.ProjectController.getReport(ProjectController.java:98) ~[classes/:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
 	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.12.jar:5.3.12]
 	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.12.jar:5.3.12]
 	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.12.jar:5.3.12]
@@ -68,79 +115,88 @@ java.lang.NullPointerException: Cannot invoke "com.tan.labbackend.entity.UserPro
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.54.jar:9.0.54]
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.54.jar:9.0.54]
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.54.jar:9.0.54]
-	at java.lang.Thread.run(Thread.java:833) [?:?]
-23:21:52.026 [docker-java-stream--1239256303] ERROR com.github.dockerjava.api.async.ResultCallbackTemplate - Error during callback
-com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"Head \"https://registry-1.docker.io/v2/testcontainers/ryuk/manifests/0.3.3\": unauthorized: incorrect username or password"}
-
-	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247) ~[testcontainers-1.16.2.jar:?]
-	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269) ~[testcontainers-1.16.2.jar:?]
 	at java.lang.Thread.run(Thread.java:831) [?:?]
-23:23:11.555 [docker-java-stream--1239256303] ERROR com.github.dockerjava.api.async.ResultCallbackTemplate - Error during callback
-com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"Head \"https://registry-1.docker.io/v2/testcontainers/ryuk/manifests/0.3.3\": unauthorized: incorrect username or password"}
-
-	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247) ~[testcontainers-1.16.2.jar:?]
-	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269) ~[testcontainers-1.16.2.jar:?]
+09:13:40.703 [http-nio-8085-exec-4] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0] with root cause
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64) ~[?:?]
+	at jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70) ~[?:?]
+	at jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266) ~[?:?]
+	at java.util.Objects.checkIndex(Objects.java:359) ~[?:?]
+	at java.util.ArrayList.get(ArrayList.java:427) ~[?:?]
+	at com.tan.labbackend.service.ReportService.getReport(ReportService.java:24) ~[classes/:?]
+	at com.tan.labbackend.service.ReportService$$FastClassBySpringCGLIB$$9766d1fb.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.12.jar:5.3.12]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689) ~[spring-aop-5.3.12.jar:5.3.12]
+	at com.tan.labbackend.service.ReportService$$EnhancerBySpringCGLIB$$8ed04b2.getReport(<generated>) ~[classes/:?]
+	at com.tan.labbackend.controller.ProjectController.getReport(ProjectController.java:98) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.54.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.54.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:450) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.8.0.jar:1.8.0]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.8.0.jar:1.8.0]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387) ~[shiro-core-1.8.0.jar:1.8.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.8.0.jar:1.8.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.54.jar:9.0.54]
 	at java.lang.Thread.run(Thread.java:831) [?:?]
-23:23:42.588 [docker-java-stream--1239256303] ERROR com.github.dockerjava.api.async.ResultCallbackTemplate - Error during callback
-com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"Head \"https://registry-1.docker.io/v2/testcontainers/ryuk/manifests/0.3.3\": unauthorized: incorrect username or password"}
-
-	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247) ~[testcontainers-1.16.2.jar:?]
-	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269) ~[testcontainers-1.16.2.jar:?]
-	at java.lang.Thread.run(Thread.java:831) [?:?]
-23:24:30.602 [docker-java-stream--1239256303] ERROR com.github.dockerjava.api.async.ResultCallbackTemplate - Error during callback
-com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"Head \"https://registry-1.docker.io/v2/testcontainers/ryuk/manifests/0.3.3\": unauthorized: incorrect username or password"}
-
-	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247) ~[testcontainers-1.16.2.jar:?]
-	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269) ~[testcontainers-1.16.2.jar:?]
-	at java.lang.Thread.run(Thread.java:831) [?:?]
-23:24:54.269 [docker-java-stream--1239256303] ERROR com.github.dockerjava.api.async.ResultCallbackTemplate - Error during callback
-com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"Head \"https://registry-1.docker.io/v2/testcontainers/ryuk/manifests/0.3.3\": unauthorized: incorrect username or password"}
-
-	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247) ~[testcontainers-1.16.2.jar:?]
-	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269) ~[testcontainers-1.16.2.jar:?]
-	at java.lang.Thread.run(Thread.java:831) [?:?]
-23:26:48.928 [docker-java-stream--1239256303] ERROR com.github.dockerjava.api.async.ResultCallbackTemplate - Error during callback
-com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"Head \"https://registry-1.docker.io/v2/testcontainers/ryuk/manifests/0.3.3\": unauthorized: incorrect username or password"}
-
-	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247) ~[testcontainers-1.16.2.jar:?]
-	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269) ~[testcontainers-1.16.2.jar:?]
-	at java.lang.Thread.run(Thread.java:831) [?:?]
-23:29:00.704 [docker-java-stream--1239256303] ERROR com.github.dockerjava.api.async.ResultCallbackTemplate - Error during callback
-com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"Head \"https://registry-1.docker.io/v2/testcontainers/ryuk/manifests/0.3.3\": unauthorized: incorrect username or password"}
-
-	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247) ~[testcontainers-1.16.2.jar:?]
-	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269) ~[testcontainers-1.16.2.jar:?]
-	at java.lang.Thread.run(Thread.java:831) [?:?]
-23:30:35.926 [docker-java-stream--1239256303] ERROR com.github.dockerjava.api.async.ResultCallbackTemplate - Error during callback
-com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"Head \"https://registry-1.docker.io/v2/testcontainers/ryuk/manifests/0.3.3\": unauthorized: incorrect username or password"}
-
-	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247) ~[testcontainers-1.16.2.jar:?]
-	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269) ~[testcontainers-1.16.2.jar:?]
-	at java.lang.Thread.run(Thread.java:831) [?:?]
-23:33:00.980 [docker-java-stream-2101387052] ERROR com.github.dockerjava.api.async.ResultCallbackTemplate - Error during callback
-com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"Head \"https://registry-1.docker.io/v2/testcontainers/ryuk/manifests/0.3.3\": unauthorized: incorrect username or password"}
-
-	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247) ~[testcontainers-1.16.2.jar:?]
-	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269) ~[testcontainers-1.16.2.jar:?]
-	at java.lang.Thread.run(Thread.java:831) [?:?]
-23:33:45.740 [docker-java-stream-2101387052] ERROR com.github.dockerjava.api.async.ResultCallbackTemplate - Error during callback
-com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"Head \"https://registry-1.docker.io/v2/testcontainers/ryuk/manifests/0.3.3\": unauthorized: incorrect username or password"}
-
-	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247) ~[testcontainers-1.16.2.jar:?]
-	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269) ~[testcontainers-1.16.2.jar:?]
-	at java.lang.Thread.run(Thread.java:831) [?:?]
-23:39:54.381 [main] ERROR org.testcontainers.dockerclient.DockerClientProviderStrategy - Could not find a valid Docker environment. Please check configuration. Attempted configurations were:
-23:39:54.381 [main] ERROR org.testcontainers.dockerclient.DockerClientProviderStrategy -     NpipeSocketClientProviderStrategy: failed with exception TimeoutException (org.rnorth.ducttape.TimeoutException: java.util.concurrent.TimeoutException). Root cause TimeoutException (null)
-23:39:54.382 [main] ERROR org.testcontainers.dockerclient.DockerClientProviderStrategy - As no valid configuration was found, execution cannot continue
-23:42:23.582 [docker-java-stream-952074891] ERROR com.github.dockerjava.api.async.ResultCallbackTemplate - Error during callback
-com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"Head \"https://registry-1.docker.io/v2/testcontainers/ryuk/manifests/0.3.3\": unauthorized: incorrect username or password"}
-
-	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247) ~[testcontainers-1.16.2.jar:?]
-	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269) ~[testcontainers-1.16.2.jar:?]
-	at java.lang.Thread.run(Thread.java:831) [?:?]
-23:47:42.857 [docker-java-stream-922873257] ERROR com.github.dockerjava.api.async.ResultCallbackTemplate - Error during callback
-com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"Get \"https://registry-1.docker.io/v2/testcontainers/ryuk/manifests/sha256:d50c04005142e165182b2e408d0c76f3cc38ca4db4af14125ce1b938820e5cef\": EOF"}
-
-	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247) ~[testcontainers-1.16.2.jar:?]
-	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269) ~[testcontainers-1.16.2.jar:?]
-	at java.lang.Thread.run(Thread.java:831) [?:?]
+09:19:58.595 [http-nio-8085-exec-2] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 17, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+09:19:58.595 [http-nio-8085-exec-5] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 18, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null
+09:19:58.805 [http-nio-8085-exec-3] ERROR com.tan.labbackend.websocket.ChatWebsocket - ChatWebsocket onError 发生了错误 userId: 15, errorMessage: Cannot invoke "Object.toString()" because the return value of "org.springframework.data.redis.core.HashOperations.get(Object, Object)" is null

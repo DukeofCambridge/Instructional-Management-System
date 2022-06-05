@@ -5,8 +5,7 @@ import com.tan.labbackend.dao.UserProjectDAO;
 import com.tan.labbackend.entity.Course;
 import com.tan.labbackend.entity.Project;
 import org.assertj.core.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
@@ -22,6 +21,8 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 
 @ExtendWith(MockitoExtension.class)
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+
 public class ProjectServiceTest {
     @Mock
     ProjectDAO projectDAO;
@@ -87,6 +88,7 @@ public class ProjectServiceTest {
     }
 
     @Test()
+    @Order(1)
     void shouldGetPastProjects() throws Exception {
         final Integer courseId = 42034203;
 
@@ -107,6 +109,7 @@ public class ProjectServiceTest {
     }
 
     @Test
+    @Order(2)
     void shouldGetNowProjects() throws Exception {
 
         final Integer courseId = 42034203;
@@ -130,6 +133,7 @@ public class ProjectServiceTest {
     }
 
     @Test
+    @Order(3)
     void shouldGetAllProjects() throws Exception {
 
         final Integer courseId = 42034203;
@@ -145,6 +149,7 @@ public class ProjectServiceTest {
     }
 
     @Test
+    @Order(4)
     void shouldGetProjectDetail() throws Exception {
         final Integer projectId = 2;
 
@@ -157,8 +162,8 @@ public class ProjectServiceTest {
     }
 
 
-    // 待办
     @Test
+    @Order(5)
     void shouldPublishProject() throws Exception {
         Calendar calendar = Calendar.getInstance();
 
@@ -184,6 +189,7 @@ public class ProjectServiceTest {
     }
 
     @Test
+    @Order(6)
     void shouldModifyProject() throws Exception {
         Calendar calendar = Calendar.getInstance();
 
@@ -210,6 +216,7 @@ public class ProjectServiceTest {
     }
 
     @Test
+    @Order(7)
     void shouldGetRemainScore() throws Exception{
         final Integer courseId = 42034203;
 
@@ -219,5 +226,19 @@ public class ProjectServiceTest {
         System.out.println(remain);
 
         Assertions.assertThat(remain).isEqualTo(60.0D);
+    }
+
+
+    @Test
+    @Order(8)
+    void shouldGetDefaultProject() throws Exception {
+        final Integer projectId = 1;
+
+        Mockito.when(projectDAO.findById(projectId)).thenReturn(Optional.ofNullable(projects.get(0)));
+
+        Project res = projectService.getInfo(projectId);
+        System.out.println(res);
+
+        Assertions.assertThat(res.getProjectName()).isEqualTo("Process model");
     }
 }

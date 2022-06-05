@@ -6,8 +6,7 @@ import com.tan.labbackend.dao.UserCourseDAO;
 import com.tan.labbackend.entity.Course;
 import com.tan.labbackend.entity.Project;
 import org.assertj.core.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
@@ -21,6 +20,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 @ExtendWith(MockitoExtension.class)
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+
 class CourseServiceTest {
 
     @Mock
@@ -45,6 +46,7 @@ class CourseServiceTest {
     }
     
     @Test
+    @Order(1)
     void shouldGetCourse(){
         final Integer courseId = 42034203;
 

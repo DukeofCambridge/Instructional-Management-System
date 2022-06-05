@@ -4,6 +4,7 @@ import com.tan.labbackend.dao.ReportDAO;
 import com.tan.labbackend.entity.Project;
 import com.tan.labbackend.entity.Report;
 import com.tan.labbackend.entity.User;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -12,6 +13,7 @@ import java.util.Date;
 import java.util.List;
 
 @Service
+@AllArgsConstructor
 public class ReportService {
     @Autowired
     ReportDAO reportDAO;

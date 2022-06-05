@@ -1,17 +1,18 @@
 package com.tan.labbackend.controller;
+import com.tan.labbackend.entity.Role;
+import com.tan.labbackend.entity.User;
 import java.util.Calendar;
 import java.util.Date;
-import java.time.Instant;
 
 import com.alibaba.fastjson.JSONObject;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tan.labbackend.entity.Course;
 
 import com.tan.labbackend.entity.Project;
+import com.tan.labbackend.entity.Report;
 import com.tan.labbackend.service.*;
 import org.hamcrest.Matchers;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -28,7 +29,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 
 @WebMvcTest(controllers = ProjectController.class)
-public class TeachingModuleTest {
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+public class TeachingModuleControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
@@ -45,6 +47,10 @@ public class TeachingModuleTest {
 
 
     private static List<Project> projects;
+
+    private static Report report;
+
+    private static User user;
 
     @Autowired
     private ObjectMapper objectMapper;
@@ -98,9 +104,34 @@ public class TeachingModuleTest {
 
         projects.add(project2);
 
+        //User
+        user = new User();
+        user.setId(0);
+        user.setUsername("1952111");
+        user.setPassword("");
+        user.setSalt("");
+        user.setPhone("");
+        user.setEmail("");
+        user.setEnabled(false);
+        user.setName("");
+        user.setRole(new Role());
+
+
+
+        // Report
+        report = new Report();
+        report.setId(1);
+        report.setTitle("SE Report");
+        report.setContentHtml("Test Content");
+        report.setContentMd("");
+        report.setUser(new User());
+        report.setDate(new Date());
+        report.setProject(projects.get(0));
+
     }
 
     @Test()
+    @Order(1)
     void shouldGetPastProjects() throws Exception {
         final Integer courseId = 42034203;
 
@@ -127,6 +158,7 @@ public class TeachingModuleTest {
     }
 
     @Test
+    @Order(2)
     void shouldGetNowProjects() throws Exception {
         final Integer courseId = 42034203;
 
@@ -153,6 +185,7 @@ public class TeachingModuleTest {
     }
 
     @Test
+    @Order(3)
     void shouldGetAllProjects() throws Exception{
 
         final Integer courseId = 42034203;
@@ -173,6 +206,7 @@ public class TeachingModuleTest {
 
 
     @Test
+    @Order(4)
     void shouldGetProjectDetail() throws Exception{
         final Integer projectId = 2;
 
@@ -191,6 +225,7 @@ public class TeachingModuleTest {
     }
 
     @Test
+    @Order(5)
     void shouldPublishProject() throws Exception{
 
         Calendar calendar = Calendar.getInstance();
@@ -222,10 +257,11 @@ public class TeachingModuleTest {
 
         JSONObject jsonRes = JSONObject.parseObject(res);
         System.out.println(jsonRes);
-
     }
 
+
     @Test
+    @Order(6)
     void shouldModifyProject() throws Exception{
 
         Calendar calendar = Calendar.getInstance();
@@ -257,6 +293,7 @@ public class TeachingModuleTest {
     }
 
     @Test
+    @Order(7)
     void shouldGetRemainScore() throws Exception{
         final Double remainScore = 40.0D;
         final Integer courseId = 42034203;
@@ -274,5 +311,98 @@ public class TeachingModuleTest {
         System.out.println(jsonRes);
 
     }
+
+    @Test
+    @Order(8)
+    void shouldGetReportTemplate() throws Exception {
+
+
+        Mockito.when(reportService.get(0)).thenReturn(report);
+
+        String res = mockMvc.perform(get("/api/projects/template"))
+                .andExpect(jsonPath("$.code", Matchers.is(200)))
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON_VALUE))
+                .andExpect(jsonPath("$.object.id", Matchers.is(1)))                .andReturn()
+                .getResponse()
+                .getContentAsString();
+
+        JSONObject jsonRes = JSONObject.parseObject(res);
+        System.out.println(jsonRes);
+    }
+
+    @Test
+    @Order(9)
+    void shouldUpdateReport() throws Exception {
+
+        String res = mockMvc.perform(post("/api/projects/update")
+                        .contentType(MediaType.APPLICATION_JSON_UTF8)
+                        .content(objectMapper.writeValueAsString(report)))
+                .andExpect(jsonPath("$.code", Matchers.is(200)))
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON_VALUE))
+                .andReturn()
+                .getResponse()
+                .getContentAsString();
+
+        JSONObject jsonRes = JSONObject.parseObject(res);
+        System.out.println(jsonRes);
+    }
+
+    @Test
+    @Order(10)
+    void shouldGetReport() throws Exception {
+
+        final Integer projectId = 1;
+        final String username = "1952111";
+
+        Mockito.when(projectService.get(projectId)).thenReturn(projects.get(0));
+        Mockito.when(userService.findByUsername(username)).thenReturn(user);
+        Mockito.when(reportService.getReport(projects.get(0),user)).thenReturn(report);
+
+
+
+        String res = mockMvc.perform(get("/api/projects/getReport")
+                        .param("projectId", String.valueOf(1))
+                        .param("username","1952111"))
+                .andExpect(jsonPath("$.code", Matchers.is(200)))
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON_VALUE))
+                .andExpect(jsonPath("$.object.id", Matchers.is(1)))
+                .andReturn()
+                .getResponse()
+                .getContentAsString();
+
+        JSONObject jsonRes = JSONObject.parseObject(res);
+        System.out.println(jsonRes);
+
+    }
+
+
+    @Test
+    @Order(11)
+    void shouldGet400BecauseReportNotExist() throws Exception {
+
+        final Integer projectId = 1;
+        final String username = "1952111";
+
+        Mockito.when(projectService.get(projectId)).thenReturn(projects.get(0));
+        Mockito.when(userService.findByUsername(username)).thenReturn(user);
+        Mockito.when(reportService.getReport(projects.get(0),user)).thenReturn(null);
+
+
+
+        String res = mockMvc.perform(get("/api/projects/getReport")
+                        .param("projectId", String.valueOf(1))
+                        .param("username","1952111"))
+                .andExpect(jsonPath("$.code", Matchers.is(400)))
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON_VALUE))
+                .andExpect(jsonPath("$.msg", Matchers.is("学生未提交作业")))
+                .andReturn()
+                .getResponse()
+                .getContentAsString();
+
+        JSONObject jsonRes = JSONObject.parseObject(res);
+        System.out.println(jsonRes);
+
+    }
+
 
 }

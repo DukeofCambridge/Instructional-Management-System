@@ -111,7 +111,12 @@ public class ChatWebsocket {
         log.info("ChatWebsocket onMessage userId: {}, 来自客户端的消息 message: {}", userId, message);
 
         JSONObject jsonObject = JSON.parseObject(message);
+
+//        System.out.println(jsonObject);
+
         MessageTypeEnum type = jsonObject.getObject("type", MessageTypeEnum.class);
+
+//        System.out.println(type.toString());
 
         log.info("ChatWebsocket onMessage userId: {}, 来自客户端的消息类型 type: {}", userId, type);
 
@@ -304,6 +309,7 @@ public class ChatWebsocket {
             GameMatchInfo gameMatchInfo = new GameMatchInfo();
             // 获取题目(5道题）
             Project project = projectService.get(Integer.parseInt(cid));
+
             List<Exercise> exercises = exerciseService.getQuestionsByCourseId(project.getCourse().getId(),5);
 
             gameMatchInfo.setExercises(exercises);

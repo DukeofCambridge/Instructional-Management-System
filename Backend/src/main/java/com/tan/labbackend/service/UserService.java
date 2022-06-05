@@ -5,6 +5,7 @@ import com.tan.labbackend.entity.User;
 import com.tan.labbackend.dao.UserDAO;
 import com.tan.labbackend.redis.RedisService;
 import com.tan.labbackend.utils.RabbitProducer;
+import lombok.AllArgsConstructor;
 import org.apache.shiro.crypto.SecureRandomNumberGenerator;
 import org.apache.shiro.crypto.hash.SimpleHash;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
@@ -23,6 +24,7 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 @Service
+@AllArgsConstructor
 @RabbitListener(queues = "fanout.a")
 public class UserService {
     @Autowired

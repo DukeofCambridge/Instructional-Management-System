@@ -1,37 +1,4 @@
-00:11:21.763 [main] INFO  org.testcontainers.dockerclient.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
-00:11:22.492 [main] INFO  org.testcontainers.dockerclient.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
-00:11:22.494 [main] INFO  org.testcontainers.DockerClientFactory - Docker host IP address is localhost
-00:11:22.541 [main] INFO  org.testcontainers.DockerClientFactory - Connected to docker: 
-  Server Version: 20.10.16
-  API Version: 1.41
-  Operating System: Docker Desktop
-  Total Memory: 6220 MB
-00:11:22.548 [main] INFO  org.testcontainers.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
-00:11:23.084 [main] INFO  org.testcontainers.utility.RegistryAuthLocator - Credential helper/store (docker-credential-desktop) does not have credentials for index.docker.io
-00:11:23.962 [main] INFO  org.testcontainers.DockerClientFactory - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
-00:11:23.963 [main] INFO  org.testcontainers.DockerClientFactory - Checking the system...
-00:11:23.963 [main] INFO  org.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
-00:11:24.962 [main] INFO  org.testcontainers.DockerClientFactory - ✔︎ Docker environment should have more than 2GB free disk space
-00:11:24.981 [main] INFO  🐳 [mysql:latest] - Creating container for image: mysql:latest
-00:11:24.986 [main] WARN  🐳 [mysql:latest] - Reuse was requested but the environment does not support the reuse of containers
-To enable reuse of containers, you must set 'testcontainers.reuse.enable=true' in a file located at C:\Users\Feihang Yang\.testcontainers.properties
-00:11:25.102 [main] INFO  🐳 [mysql:latest] - Starting container with ID: ff387ea3077fbce56913b53fb9ee95d54af01f74ec440a78f54e5b8e6593f5f3
-00:11:25.716 [main] INFO  🐳 [mysql:latest] - Container mysql:latest is starting: ff387ea3077fbce56913b53fb9ee95d54af01f74ec440a78f54e5b8e6593f5f3
-00:11:25.791 [main] INFO  🐳 [mysql:latest] - Waiting for database connection to become available at jdbc:mysql://localhost:53956/spring-mysql-db using query 'SELECT 1'
-00:11:38.140 [main] INFO  🐳 [mysql:latest] - Container is started (JDBC URL: jdbc:mysql://localhost:53956/spring-mysql-db)
-00:11:38.140 [main] INFO  🐳 [mysql:latest] - Container mysql:latest started in PT13.1719S
-00:11:38.550 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
-00:11:38.596 [main] INFO  com.tan.labbackend.dao.CourseDAOTest - Starting CourseDAOTest using Java 16.0.2 on LAPTOP-RR0F39HJ with PID 1808 (started by Feihang Yang in D:\Code\Github_Desktop\2022 - course - coop\软件测试\SoftwareTesting-Demo\Backend)
-00:11:38.602 [main] INFO  com.tan.labbackend.dao.CourseDAOTest - No active profile set, falling back to default profiles: default
-00:11:40.046 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-00:11:40.128 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
-00:11:40.340 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-00:11:40.518 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-00:11:41.358 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-00:11:41.381 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-00:11:41.838 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
-00:11:41.839 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
-00:11:42.374 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-00:11:43.726 [main] INFO  com.tan.labbackend.dao.CourseDAOTest - Started CourseDAOTest in 5.545 seconds (JVM running for 25.067)
-00:11:44.426 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-00:11:44.588 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+10:26:04.386 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+10:26:04.434 [main] INFO  com.tan.labbackend.controller.TeachingModuleControllerTest - Starting TeachingModuleControllerTest using Java 16.0.2 on LAPTOP-RR0F39HJ with PID 20268 (started by Feihang Yang in D:\Code\Github_Desktop\2022 - course - coop\软件测试\SoftwareTesting-Demo\Backend)
+10:26:04.440 [main] INFO  com.tan.labbackend.controller.TeachingModuleControllerTest - No active profile set, falling back to default profiles: default
+10:26:08.234 [main] INFO  com.tan.labbackend.controller.TeachingModuleControllerTest - Started TeachingModuleControllerTest in 4.364 seconds (JVM running for 7.149)
