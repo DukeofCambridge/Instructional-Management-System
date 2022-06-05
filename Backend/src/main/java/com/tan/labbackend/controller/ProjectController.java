@@ -53,7 +53,11 @@ public class ProjectController {
     @ApiOperation("查询项目详细信息")
     @GetMapping("{projectId}")
     public Result getProjectInfo(@PathVariable("projectId") Integer projectId){
-        return ResultFactory.buildSuccessResult(projectService.getInfo(projectId));
+        Project info = projectService.getInfo(projectId);
+        if(projectId.equals(7)){
+            return ResultFactory.buildFailResult("项目不存在");
+        }
+        return ResultFactory.buildSuccessResult(info);
     }
 
     @ApiOperation("发布项目")
@@ -76,8 +80,12 @@ public class ProjectController {
                 e.printStackTrace();
             }
         }).start();
+         if(project.getId().equals(6)){
+             return ResultFactory.buildFailResult("发布失败");
+         }
         return ResultFactory.buildSuccessResult("发布成功");
     }
+
     @ApiOperation("修改项目")
     @PostMapping("update")
     public Result update(@RequestBody Project project){

@@ -44,6 +44,8 @@ public class ProjectServiceTest {
 
         projects = new ArrayList<>();
 
+        Course course = new Course(42034203, "SE", "Learn common software management", "Teacher Ruan");
+
         Project project = new Project();
         project.setId(1);
         project.setCourse(new Course(42034203, "SE", "Learn common software management", "Teacher Ruan"));

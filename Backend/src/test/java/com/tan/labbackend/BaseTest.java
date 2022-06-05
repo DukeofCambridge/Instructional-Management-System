@@ -6,8 +6,8 @@ public abstract class BaseTest {
 
     static MySQLContainer mySQLContainer = (MySQLContainer) new MySQLContainer("mysql:latest")
             .withDatabaseName("spring-mysql-db")
-            .withUsername("yangfeihang")
-            .withPassword("dockerpwd")
+            .withUsername("your dockerhub username")
+            .withPassword("your dockerhub password")
             .withReuse(true);
 
     static {
