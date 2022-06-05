@@ -26,13 +26,6 @@ public class ProjectDAOTest extends BaseTest {
     @Autowired
     private ProjectDAO projectDAO;
 
-//    static private Project project;
-
-//    @BeforeEach
-//    static void setup() {
-//
-//    }
-
 
     @Test
     @Order(1)

@@ -1,11 +1,11 @@
-22:35:08.790 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
-22:35:08.972 [main] INFO  com.tan.labbackend.controller.TeachingModuleControllerTest - Starting TeachingModuleControllerTest using Java 11.0.15.1 on LAPTOP-RR0F39HJ with PID 26532 (started by Feihang Yang in D:\Code\Github_Desktop\2022 - course - coop\软件测试\SoftwareTesting-Demo\Backend)
-22:35:08.990 [main] INFO  com.tan.labbackend.controller.TeachingModuleControllerTest - No active profile set, falling back to default profiles: default
-22:35:49.047 [main] INFO  com.tan.labbackend.controller.TeachingModuleControllerTest - Started TeachingModuleControllerTest in 41.667 seconds (JVM running for 55.782)
-22:35:53.509 [main] INFO  org.testcontainers.dockerclient.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
-22:36:00.859 [main] INFO  com.tan.labbackend.WebsocketTest - Starting WebsocketTest using Java 11.0.15.1 on LAPTOP-RR0F39HJ with PID 26532 (started by Feihang Yang in D:\Code\Github_Desktop\2022 - course - coop\软件测试\SoftwareTesting-Demo\Backend)
-22:36:00.862 [main] INFO  com.tan.labbackend.WebsocketTest - No active profile set, falling back to default profiles: default
-22:36:02.419 [main] ERROR org.aspectj.weaver.loadtime.Aj - org/springframework/boot/jdbc/DataSourceBuilder$OraclePoolDataSourceProperties
+23:05:09.422 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+23:05:09.661 [main] INFO  com.tan.labbackend.controller.TeachingModuleControllerTest - Starting TeachingModuleControllerTest using Java 11.0.15.1 on LAPTOP-RR0F39HJ with PID 4644 (started by Feihang Yang in D:\Code\Github_Desktop\2022 - course - coop\软件测试\SoftwareTesting-Demo\Backend)
+23:05:09.677 [main] INFO  com.tan.labbackend.controller.TeachingModuleControllerTest - No active profile set, falling back to default profiles: default
+23:05:33.318 [main] INFO  com.tan.labbackend.controller.TeachingModuleControllerTest - Started TeachingModuleControllerTest in 25.161 seconds (JVM running for 37.399)
+23:05:35.040 [main] INFO  org.testcontainers.dockerclient.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+23:05:41.278 [main] INFO  com.tan.labbackend.WebsocketTest - Starting WebsocketTest using Java 11.0.15.1 on LAPTOP-RR0F39HJ with PID 4644 (started by Feihang Yang in D:\Code\Github_Desktop\2022 - course - coop\软件测试\SoftwareTesting-Demo\Backend)
+23:05:41.281 [main] INFO  com.tan.labbackend.WebsocketTest - No active profile set, falling back to default profiles: default
+23:05:42.324 [main] ERROR org.aspectj.weaver.loadtime.Aj - org/springframework/boot/jdbc/DataSourceBuilder$OraclePoolDataSourceProperties
 org.aspectj.bridge.AbortException: trouble in: 
 class org.springframework.boot.jdbc.DataSourceBuilder$OraclePoolDataSourceProperties extends org.springframework.boot.jdbc.DataSourceBuilder$MappedDataSourceProperties:
   public Class getDataSourceInstanceType():
@@ -188,27 +188,27 @@ end class org.springframework.boot.jdbc.DataSourceBuilder$OraclePoolDataSourcePr
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) [junit-rt.jar:?]
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235) [junit-rt.jar:?]
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) [junit-rt.jar:?]
-22:36:02.455 [main] INFO  org.aspectj.weaver.Dump - Dumping to D:\Code\Github_Desktop\2022 - course - coop\软件测试\SoftwareTesting-Demo\Backend\.\ajcore.20220605.223602.452.txt
-22:36:02.468 [main] INFO  org.aspectj.weaver.Dump - Dumping to D:\Code\Github_Desktop\2022 - course - coop\软件测试\SoftwareTesting-Demo\Backend\.\ajcore.20220605.223602.466.txt
-22:36:06.500 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-22:36:06.809 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
-22:36:06.989 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-22:36:07.532 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-22:36:08.909 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-22:36:09.117 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-22:36:10.939 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
-22:36:10.940 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
-22:36:11.735 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-22:36:14.558 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-22:36:14.587 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-22:36:14.835 [main] INFO  com.tan.labbackend.WebsocketTest - Starting WebsocketTest using Java 11.0.15.1 on LAPTOP-RR0F39HJ with PID 26532 (started by Feihang Yang in D:\Code\Github_Desktop\2022 - course - coop\软件测试\SoftwareTesting-Demo\Backend)
-22:36:14.837 [main] INFO  com.tan.labbackend.WebsocketTest - No active profile set, falling back to default profiles: default
-22:36:16.138 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-22:36:16.159 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
-22:36:16.717 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
-22:36:16.717 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-22:36:16.809 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
-22:36:16.809 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
-22:36:16.941 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-22:36:17.149 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
-22:36:17.355 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+23:05:42.355 [main] INFO  org.aspectj.weaver.Dump - Dumping to D:\Code\Github_Desktop\2022 - course - coop\软件测试\SoftwareTesting-Demo\Backend\.\ajcore.20220605.230542.339.txt
+23:05:42.355 [main] INFO  org.aspectj.weaver.Dump - Dumping to D:\Code\Github_Desktop\2022 - course - coop\软件测试\SoftwareTesting-Demo\Backend\.\ajcore.20220605.230542.355.txt
+23:05:46.247 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:05:46.607 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+23:05:46.780 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+23:05:47.380 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:05:48.781 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:05:48.842 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+23:05:50.103 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+23:05:50.104 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+23:05:50.826 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:05:53.630 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:05:53.654 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:05:53.922 [main] INFO  com.tan.labbackend.WebsocketTest - Starting WebsocketTest using Java 11.0.15.1 on LAPTOP-RR0F39HJ with PID 4644 (started by Feihang Yang in D:\Code\Github_Desktop\2022 - course - coop\软件测试\SoftwareTesting-Demo\Backend)
+23:05:53.922 [main] INFO  com.tan.labbackend.WebsocketTest - No active profile set, falling back to default profiles: default
+23:05:55.476 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:05:55.511 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+23:05:56.094 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+23:05:56.094 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+23:05:56.169 [main] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.tan.labbackend.entity.UserProjectId
+23:05:56.169 [main] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.tan.labbackend.entity.UserProjectId
+23:05:56.308 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:05:56.488 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+23:05:56.722 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.

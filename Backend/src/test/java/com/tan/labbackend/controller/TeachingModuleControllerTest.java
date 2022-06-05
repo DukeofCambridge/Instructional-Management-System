@@ -234,7 +234,6 @@ public class TeachingModuleControllerTest {
         String res = mockMvc.perform(get("/api/projects/7"))
                 .andExpect(jsonPath("$.code", Matchers.is(400)))
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON_VALUE))
-//                .andExpect(jsonPath("$.object.id", Matchers.is(2)))
                 .andReturn()
                 .getResponse()
                 .getContentAsString();
@@ -341,7 +340,8 @@ public class TeachingModuleControllerTest {
         String res = mockMvc.perform(get("/api/projects/template"))
                 .andExpect(jsonPath("$.code", Matchers.is(200)))
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON_VALUE))
-                .andExpect(jsonPath("$.object.id", Matchers.is(1)))                .andReturn()
+                .andExpect(jsonPath("$.object.id", Matchers.is(1)))
+                .andReturn()
                 .getResponse()
                 .getContentAsString();
 

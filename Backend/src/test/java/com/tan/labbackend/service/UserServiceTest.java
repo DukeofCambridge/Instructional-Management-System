@@ -22,7 +22,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(MockitoExtension.class)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-//@Listeners({TestListenerAdapter.class})
 public class UserServiceTest {
     @Mock
     UserDAO userDAO;

@@ -53,12 +53,6 @@ class WebsocketTest {
             Thread.sleep(500);
         }
 
-//        JSONObject gameOver = new JSONObject();
-//        gameOver.put("sender",18);
-//        gameOver.put("data",60);
-//        gameOver.put("type","GAME_OVER");
-//
-//        myWebSocketClient1.send(gameOver.toString());
 
 
 
@@ -83,18 +77,12 @@ class WebsocketTest {
         }
 
 
-//        gameOver.put("sender",17);
-//        gameOver.put("data",60);
-//        gameOver.put("type","GAME_OVER");
-//
-//        myWebSocketClient2.send(gameOver.toString());
 
         JSONObject jsonObject2 = new JSONObject();
         jsonObject2.put("sender",17);
         jsonObject2.put("contestId",12);
         jsonObject2.put("type","ADD_USER");
 
-//        jsonObject.put("sender",17);
 
 
         String s2 = jsonObject2.toString();
@@ -111,18 +99,13 @@ class WebsocketTest {
             Thread.sleep(500);
         }
 
-//        gameOver.put("sender",15);
-//        gameOver.put("data",60);
-//        gameOver.put("type","GAME_OVER");
-//
-//        myWebSocketClient3.send(gameOver.toString());
 
         JSONObject jsonObject3 = new JSONObject();
         jsonObject3.put("sender",15);
         jsonObject3.put("contestId",12);
         jsonObject3.put("type","ADD_USER");
 
-//        jsonObject.put("sender",15);
+
 
         String s3 = jsonObject3.toString();
         System.out.println(s3);
